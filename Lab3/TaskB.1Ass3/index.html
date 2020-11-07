@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Press a key on the keyboard in the input field to find out if the ALT key was pressed or not.</p>
+
+<input type="text" onkeydown="isKeyPressed(event)">
+
+<p id="demo"></p>
+
+<script>
+function isKeyPressed(event) {
+  var x = document.getElementById("demo");
+  if (event.altKey) {
+    x.innerHTML = "The ALT key was pressed!";
+  } else if(event.ctrlKey) {
+    x.innerHTML = "The ctrl key was NOT pressed!";
+  }
+  else if(event.shiftKey){
+      x.innerHTML = "you entered shift key";
+  }
+  
+}
+</script>
+
+</body>
+</html>

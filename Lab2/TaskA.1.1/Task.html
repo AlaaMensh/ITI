@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var x = 0, y = 0, w=200, h=200;  // for new Window 
+var dx = 5, dy = 5;                 
+var interval = 100;              // Milliseconds between updates
+var win = open("newWindow.html", "", "width=" + 200 + ",height=" + 200);
+win.focus();
+win.moveTo(x,y);
+
+var intervalID  = win.setInterval(function fly() {
+        console.log("X is: "+ x +" " + "DX: "+ dx +" "+ " dy is: "+dy +"");
+
+    if ((x+dx > (screen.availWidth - w)) || (x+dx < 0)){
+        dx = -dx;
+    } 
+    if ((y+dy > (screen.availHeight - h)) || (y+dy < 0)) 
+    {
+        dy = -dy;
+    }
+
+    x += dx;
+    y += dy;
+    win.moveTo(x,y);
+}, 100);
+
+
+</script>
+</head>
+<body>
+
+
+<input type="button" value="Stop" onclick="clearInterval(intervalID); win.close();">
+</body>
+</html>

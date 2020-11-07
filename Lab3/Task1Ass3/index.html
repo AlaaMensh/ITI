@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="username">Name</label>
+        <input type="text" name="username" id="username"><br><br>
+
+    <label for="age">Age</label>
+        <input type="number" name="age" id="age"><br><br>
+
+    <label for="Gender"> Select your Gender</label>
+        <input type="radio" name="Gender" value="male" id="male" >Male
+            <img src="1.jpg" for="male"> 
+        <input type="radio" name="Gender" value="female" id="female"> Female
+            <img src="2.jpg" for="male">
+    <br><br>
+
+    <label for="color"> Select your Color: </label>
+        <select name="color" id="color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="brown">Brown</option>
+        </select>
+
+    <button onclick="saveInfo()">Register</button>
+    
+
+<script src="index.js"></script>
+<script src="library.js"></script>
+</body>
+</html>

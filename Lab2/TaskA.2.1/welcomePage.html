@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <h1 id="username"></h1>
+   <h1 id="email"></h1>
+   <h1 id="password"></h1>
+   <h1 id="jobtitle"></h1>
+   <h1 id="mobile"></h1>
+   <h1 id="gender"></h1>
+   <h1 id="address"></h1>
+
+    <script>
+        
+    document.getElementById('username').innerHTML = new URL(location.href).searchParams.get('username');
+    document.getElementById('email').innerHTML = new URL(location.href).searchParams.get('email');
+    document.getElementById('password').innerHTML = new URL(location.href).searchParams.get('password');
+    document.getElementById('jobtitle').innerHTML = new URL(location.href).searchParams.get('jobititle');
+    document.getElementById('mobile').innerHTML = new URL(location.href).searchParams.get('mobile');
+    document.getElementById('gender').innerHTML = new URL(location.href).searchParams.get('gender');
+    document.getElementById('address').innerHTML = new URL(location.href).searchParams.get('address');
+    
+     
+
+    </script>
+</body>
+</html>
