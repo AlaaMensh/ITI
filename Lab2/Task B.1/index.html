@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="textDiv"> 
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam qui corrupti fuga quia. Eum porro, laudantium deserunt libero similique eveniet voluptatum, a, voluptates id ab facilis magni vitae inventore nulla?
+
+        </p>
+    </div>
+    <table border="1">
+        <tr>
+            <th>Line Height</th>
+            <th>color</th>
+            <th>Text Align</th>
+            <th>letterspacing</th>
+            <th>textIndent</th>
+            <th>textTransform</th>
+
+          </tr>
+          <tr>
+            <td>
+                <form id="height">
+                    <input type="radio" name="line-height" value="10px" onchange="getValue(this)"> 10px<br>
+                    <input type="radio" name="line-height" value="15px" onchange="getValue(this)"> 15px<br>
+                    <input type="radio" name="line-height" value="normal" onchange="getValue(this)"> normal<br>
+                    <input type="radio" name="line-height" value="25px" onchange="getValue(this)"> 25px<br>
+                    <!-- <input type="button" id="btn" value="Show Selected Value" onclick="display('height')"> -->
+                </form>
+            </td>
+            <td>                
+                <form id="color">
+                <input type="radio" name="color" value="blue" onchange="getValue(this)"> blue<br>
+                <input type="radio" name="color" value="red" onchange="getValue(this)"> red<br>
+                <input type="radio" name="color" value="green" onchange="getValue(this)"> green<br>
+                <input type="radio" name="color" value="brown" onchange="getValue(this)"> brown<br>
+                <!-- <input type="button" id="btn" value="Show Selected Value" onclick="display('color')"> -->
+                </form>
+            </td>
+            <td>                
+                <form id="align">
+                <input type="radio" name="text-align" value="center" onchange="getValue(this)"> center<br>
+                <input type="radio" name="text-align" value="left" onchange="getValue(this)"> left<br>
+                <input type="radio" name="text-align" value="right" onchange="getValue(this)"> right<br>
+                <input type="radio" name="text-align" value="justify" onchange="getValue(this)"> justify<br>
+                <!-- <input type="button" id="btn" value="Show Selected Value" onclick="display('ali')"> -->
+                </form>
+            </td>
+            <td>                
+                <form id="letterspacing">
+                <input type="radio" name="letterSpacing" value="normal" onchange="getValue(this)"> normal<br>
+                <input type="radio" name="letterSpacing" value="-1px" onchange="getValue(this)"> -1px<br>
+                <input type="radio" name="letterSpacing" value="2px" onchange="getValue(this)"> 2px<br>
+                <input type="radio" name="letterSpacing" value="3px" onchange="getValue(this)"> 3px<br>
+                <!-- <input type="button" id="btn" value="Show Selected Value" onclick="display('ali')"> -->
+                </form>
+            </td>
+            <td>                
+                <form id="textIndent">
+                <input type="radio" name="textIndent" value="0px" onchange="getValue(this)"> 0px<br>
+                <input type="radio" name="textIndent" value="5px" onchange="getValue(this)"> 5px<br>
+                <input type="radio" name="textIndent" value="15px" onchange="getValue(this)"> 15px<br>
+                <input type="radio" name="textIndent" value="25px" onchange="getValue(this)"> 25px<br>
+                <!-- <input type="button" id="btn" value="Show Selected Value" onclick="display('ali')"> -->
+                </form>
+            </td>
+            <td>                
+                <form id="texttransform">
+                <input type="radio" name="textTransform" value="none" onchange="getValue(this)"> none<br>
+                <input type="radio" name="textTransform " value="capitalize" onchange="getValue(this)"> capitalize<br>
+                <input type="radio" name="textTransform" value="upperCase" onchange="getValue(this)"> upperCase<br>
+                <input type="radio" name="textTransform" value="lowerCase" onchange="getValue(this)"> lowerCase<br>
+                <!-- <input type="button" id="btn" value="Show Selected Value" onclick="display('ali')"> -->
+                </form>
+            </td>
+          </tr>
+
+    </table>
+    <!-- <input type="button" id="btn" value="Show Selected Value" onclick="display()"> -->
+
+    <script src="index.js"></script>
+</body>
+</html>

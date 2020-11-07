@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  height: 3000px;
+  font-size: 25px;
+}
+</style>
+</head>
+<body onload="scrollWin()">
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis beatae error odit iste minus placeat, repudiandae incidunt impedit architecto ipsa eaque, delectus reprehenderit nesciunt dolor, ratione illo consectetur odio officiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quibusdam reiciendis quo vero hic repudiandae eius autem architecto voluptas, molestias rem nostrum. Reprehenderit, culpa ab accusantium perspiciatis ipsa asperiores blanditiis.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi, in ducimus reiciendis cumque quam, veniam possimus culpa libero hic quis quibusdam laboriosam inventore consectetur exercitationem alias provident nostrum delectus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolores quisquam expedita illum deserunt, maiores blanditiis fugit sint, ad quasi hic, nihil atque dicta commodi harum! Provident sapiente ipsam repudiandae.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nam possimus quia laboriosam tempora quae aut vero et, sit eius facilis unde, nihil sint obcaecati assumenda id labore officia sed.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ab maxime minus quae nam placeat voluptatum nostrum illum sunt cumque. Voluptatibus eum tenetur maxime esse nam ipsum quia porro magnam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quia dicta qui voluptatibus optio, consequuntur esse rem! Perspiciatis ratione dolore dolorum minus! Eius, commodi tenetur illum vitae nam ipsam sapiente.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae in rem quidem ratione ducimus inventore voluptatem, nostrum, maxime reiciendis impedit error pariatur quas? Et totam dolorem harum odit facere!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias a perferendis mollitia neque vel, fuga reiciendis esse magnam laborum sed cumque, vitae, aperiam labore ea asperiores iusto sequi! Animi.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis quidem commodi, neque eum esse enim temporibus, fugiat accusamus illo vitae a illum nostrum assumenda qui veniam quibusdam? Totam, harum!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas eligendi repellendus beatae ad, corporis velit qui in cum eius rem, ratione praesentium. Reiciendis, fugiat explicabo veritatis molestiae illo quia.
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis beatae error odit iste minus placeat, repudiandae incidunt impedit architecto ipsa eaque, delectus reprehenderit nesciunt dolor, ratione illo consectetur odio officiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quibusdam reiciendis quo vero hic repudiandae eius autem architecto voluptas, molestias rem nostrum. Reprehenderit, culpa ab accusantium perspiciatis ipsa asperiores blanditiis.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi, in ducimus reiciendis cumque quam, veniam possimus culpa libero hic quis quibusdam laboriosam inventore consectetur exercitationem alias provident nostrum delectus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolores quisquam expedita illum deserunt, maiores blanditiis fugit sint, ad quasi hic, nihil atque dicta commodi harum! Provident sapiente ipsam repudiandae.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nam possimus quia laboriosam tempora quae aut vero et, sit eius facilis unde, nihil sint obcaecati assumenda id labore officia sed.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ab maxime minus quae nam placeat voluptatum nostrum illum sunt cumque. Voluptatibus eum tenetur maxime esse nam ipsum quia porro magnam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quia dicta qui voluptatibus optio, consequuntur esse rem! Perspiciatis ratione dolore dolorum minus! Eius, commodi tenetur illum vitae nam ipsam sapiente.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae in rem quidem ratione ducimus inventore voluptatem, nostrum, maxime reiciendis impedit error pariatur quas? Et totam dolorem harum odit facere!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias a perferendis mollitia neque vel, fuga reiciendis esse magnam laborum sed cumque, vitae, aperiam labore ea asperiores iusto sequi! Animi.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis quidem commodi, neque eum esse enim temporibus, fugiat accusamus illo vitae a illum nostrum assumenda qui veniam quibusdam? Totam, harum!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas eligendi repellendus beatae ad, corporis velit qui in cum eius rem, ratione praesentium. Reiciendis, fugiat explicabo veritatis molestiae illo quia.
+</p>
+
+<!-- <button onclick="scrollWin()">Click me to scroll horizontally!</button><br><br> -->
+
+<script>
+    var i =0;
+function scrollWin() { 
+    if(i > 3000){
+
+    window.close();
+    }
+    window.scrollBy(0, 200);
+    i+= 200;
+    setTimeout(scrollWin,500);
+}
+</script>
+
+</body>
+</html>
